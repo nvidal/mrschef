@@ -1,0 +1,21 @@
+doctype html
+html(ng-app='MrsChefApp', lang="es")
+  head
+    title= title
+    script(src='/angularjs/angular.min.js')
+    script(src='/angularjs/angular-animate.min.js')
+    script(src='/angularjs/angular-aria.min.js')
+    script(src='/angularjs/angular-messages.min.js')
+    script(src='/angularjs/angular-route.min.js')
+    script(src='/angular-material/angular-material.min.js')
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/angular-material/angular-material.min.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    script(src='/mrschefApp.js')
+    script(src='/controllers.js')
+  body
+    include ../public/partials/header.html
+    block content
+    include ../public/partials/footer.html
